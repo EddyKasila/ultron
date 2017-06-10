@@ -1,0 +1,64 @@
+<div class="col-md-7 ">
+   <table class="table">
+     <tbody>
+       <tr><td><strong>Username</strong></td><td>{{username}}</td></tr>
+       <tr><td><strong>Email</strong></td><td>{{email}}</td></tr>
+       <tr><td><strong>Phone</strong></td><td>{{phone_no}}</td></tr>
+       <tr><td><strong>Role</strong></td><td>{{role}}</td></tr>
+     </tbody>
+  </table>
+
+</div>
+
+<div class="row" id="new-movie">
+    <button class="close" arial-hidden="true" id="close"></button>
+
+   <div class="col-md-4">
+     {{!-- Upload movie poster --}}
+     <br><br>
+     <button class="btn btn-default">Upload Picure</button>
+   </div>
+
+   <div class="col-md-7 ">
+
+   <form id="form" name="form" action="" method="POST">
+
+    <div class="col-md-12">
+     <label>Movie Title:</label>
+      <input type="text" name="movie_title" class="form-group form-control" >
+    </div>
+    <div class="col-md-12">
+     <label>Main Characters:</label>
+      <input type="text" name="main_characters" class="form-group form-control" >
+    </div>
+    <div class="col-md-12">
+     <label>Cost:</label>
+      <input type="text" name="cost" class="form-group form-control" >
+    </div>
+    <div class="col-md-12">
+     <label>Description</label>
+      <textarea id="desc" class="form-group form-control" name="description" ></textarea>
+    </div>
+    <div class="col-md-6">
+      <button class="btn btn-primary" type="submit">ADD MOVIE</button>
+    </div>
+    </form>
+
+   </div>
+</div>
+<table class="table">
+            <h3>List of Movies</h3>
+
+            {{#if err}}
+                <th class="col-md-offset-4"><i class="fa fa-exclamation-triangle fa-2x"></i>No data found!</th>
+            {{else}}
+              <thead><th><strong>Id</strong></th><th><strong>Movie ID</strong></th><th><strong>Username</strong></th><th><strong>Quantity</strong></th><th><strong>Total Cost</strong></th><th><strong>Posted</strong></th><th></th></thead>
+                {{#each booking as |bookings|}}
+                    <tbody>
+                      <tr><td>{{bookings.id}}</td><td>{{bookings.movieid}}</td><td>{{bookings.user}}</td>
+                      <td>{{bookings.quantity}}</td><td>{{bookings.totalcost}}</td><td>{{bookings.post}}</td><td><a href="">Delete</a></td></tr>
+                    </tbody>
+                {{/each}}
+            {{/if}}
+
+            </table>

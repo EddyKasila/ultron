@@ -1,0 +1,44 @@
+	<div id="hero-image-single" style="background-image: url('/images/{{movie.hero_image}}')">
+		<h1 id="hero-title">MOVIE DETAILS</h1>
+		
+	</div>
+
+	<div class="content-padding clearfix">
+
+		<div>
+			<h3 id="hero-title">{{movie.movie_title}}</h3>
+		</div>
+
+		<div class="poster-wrapper">
+			<img src="/images/{{movie.movie_poster}}" class="img-responsive">
+		</div>
+
+		<div class="description-wrapper">
+
+			<h2 class="movie-header">Trailer</h2>
+			<div align="center"class="embed-responsive embed-responsive-16by9">
+			<video autoplay loop class="embed-responsive-item">
+			<source src="<{{movie.trailer}}>" type="video/mp4">
+			</video>
+			</div>
+			{{!-- <video controls="true" src="<{{movie.trailer}}>"></video> --}}
+
+			<div class="description">
+				<h2 class="movie-header">Synopsis</h2>
+				<p>{{ movie.description }}</p>
+			</div>
+
+			<div class="main-characters">
+				<h2 class="movie-header">Main Characters</h2>
+				<ul>
+					<li>{{movie.main_characters}}</li>
+				</ul>
+			</div>
+
+			<div class="col-md-6">
+	   	        <a class="btn btn-info" href="/bookmovie/{{movie.id}}">Book Movie</a>
+	   	    </div>
+		</div>
+
+	</div>
+

@@ -1,0 +1,56 @@
+{
+  "movies": [{
+    "title" : "Captain America Civil War",
+    "movie_number" : "1",
+    "main_characters" : [" Chris Evans, Robert Downey Jr., Scarlett Johansson"],
+    "description" : "",
+    "poster" : "star_wars_episode_1_poster.png",
+    "hero_image" : "star_wars_episode_1_hero.jpg"
+  },
+
+  {
+    "title" : "Doctor Strange",
+    "movie_number" : "2",
+    "main_characters" : ["Obi-Wan Kenobi", "Anakin Skywalker", "Count Dooku", "Padmé Amidala", "Mace Windu", "Yoda", "Jango Fett", "Supreme Chancellor Palpatine"],
+    "description" : "",
+    "poster" : "star_wars_episode_2_poster.png",
+    "hero_image" : "star_wars_episode_2_hero.jpg"
+  },
+
+  {
+    "title" : "Batman Vs Superman",
+    "movie_number" : "3",
+    "main_characters" : ["Obi-Wan Kenobi", "Anakin Skywalker", "Count Dooku", "Padmé Amidala", "Mace Windu", "Yoda", "C-3PO", "Supreme Chancellor Palpatine"],
+    "description" : "",
+    "poster" : "star_wars_episode_3_poster.png",
+    "hero_image" : "star_wars_episode_3_hero.jpg"
+  },
+
+  {
+    "title" : "War Dogs",
+    "movie_number" : "4",
+    "main_characters" : ["Luke Skywalker", "Han Solo", "Princess Leia Organa", "Ben Kenobi", "Darth Vader", "C-3P0", "R2-D2", "Chewbacca"],
+    "description" : "",
+    "poster" : "star_wars_episode_4_poster.png",
+    "hero_image" : "star_wars_episode_4_hero.jpg"
+  },
+
+  {
+    "title" : "Fantastic Beasts and Where To Find Them",
+    "movie_number" : "5",
+    "main_characters" : ["Luke Skywalker", "Han Solo", "Princess Leia Organa", "Darth Vader", "C-3P0", "R2-D2", "Chewbacca", "Lando Calrissian", "Boba Fett"],
+    "description" : "",
+    "poster" : "star_wars_episode_5_poster.png",
+    "hero_image" : "star_wars_episode_5_hero.jpg"
+  },
+
+  {
+    "title" : "Justice League",
+    "movie_number" : "6",
+    "main_characters" : ["Luke Skywalker", "Han Solo", "Princess Leia Organa", "Darth Vader", "C-3P0", "Chewbacca", "The Emperor", "Boba Fett"],
+    "description" : "",
+    "poster" : "star_wars_episode_6_poster.png",
+    "hero_image" : "star_wars_episode_6_hero.jpg"
+  }]
+
+}

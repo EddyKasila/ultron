@@ -1,0 +1,417 @@
+body
+{
+background: #ededed fixed;
+}
+/************************Navbar ******************/
+#navbar
+{
+position:fixed;
+padding:1em;
+width:100%;
+}
+#navbar-dashboard
+{
+position:fixed;
+padding:1.4em;
+width:100%;
+z-index: 1000;
+box-shadow: 1px 2px 2px #000;
+background: gray;
+}
+#navbar h2
+{
+  margin-right: -20px;
+
+}
+/******* Login ******/
+#login-form
+{
+    position: relative;
+    margin-top:120px;
+    border-radius:6px;
+    height:auto;
+    top:100px;
+} 
+#login-form-message
+{
+    position: relative;
+    margin-top:70px;
+    border-radius:6px;
+    height:auto;
+} 
+.space
+{
+	height: 30px;
+}
+span
+{ background:#ff6600;
+border-radius:200px;
+margin-left:80px;
+margin-top:50px;
+width:100px;
+ }
+#form
+{
+padding:2em 1em 2em;
+}
+#form-group .btn{
+	width: 100%;
+	text-transform: uppercase;
+}
+.form-control{
+	padding: 17px 25px;
+	font-size: 15px;
+	height: auto;
+	border-radius: 0;
+	background:#FFF ;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: all 0.5;
+	transition: all 0.5s;
+	border: 1px solid #fff;
+    width:100%;
+}
+.form-control:focus{
+	border: 1px solid #ff6600;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.btn-orange
+{
+	border-radius:5px;
+	color:#fff;
+	background-color:#ff6600;
+	padding:0;
+    height:50px;
+	letter-spacing:1px;
+	margin:0;
+    width:100%;
+	text-transform:uppercase;
+}
+.btn-orange-small
+{
+	border-radius:5px;
+	color:#fff;
+	background-color:#ff6600;
+	padding:0;
+    height:40px;
+	letter-spacing:1px;
+	margin:0;
+    width:110px;
+	text-transform:uppercase;
+}
+.btn-orange-small:hover
+{
+	color:#ff6600;
+	border:1px solid #ff6600;
+	background-color:#fff;
+    -webkit-transition: 0.5s 0.5s;
+	transition: all 0.5s;
+}
+.btn-orange:hover
+{
+	color:#ff6600;
+	border:1px solid #ff6600;
+	background-color:#fff;
+    -webkit-transition: 0.5s 0.5s;
+	transition: all 0.5s;
+}
+/******** Dashboard navigation *****/
+#body
+{
+	width: 100%;
+	border: 1px solid #ff6600;
+	height: 100%;
+}
+#navigation
+{
+left:0px;
+background:#1d1d1d;
+height:800px;
+color:#fff;
+position:fixed;
+}
+#navigation-links
+{
+	margin-left:-30px;
+
+}
+#nav > ul
+{
+margin:0;
+padding: 0;
+text-align: center;
+}
+#nav > ul > li
+{
+	display: inline-table;
+	padding: 0.5em 0em 2em 2em;
+	text-align: center;
+
+}
+#nav > ul > li > a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#nav li a:hover
+{
+    color: #ff6600;
+     -webkit-transition: all 0.5s ease 0.2s;
+       -moz-transition: all  0.5s ease 0.2s;
+        -ms-transition: all  0.5s ease 0.2s;
+         -o-transition: all  0.5s ease 0.2s;
+            transition: all  0.5s ease 0.2s;
+}
+
+#profile-item
+{
+	margin-top:70px;
+	margin-left: -30px;
+	left: 0px;
+}
+#profile-item img
+{
+	border: 1px solid #ff6600;
+	border-radius: 100px;
+	left: 0px;
+}
+#profile-item strong
+{
+    font-size: 10pt;
+}
+#nav-profile
+{   
+	text-color:#fff;
+	width: 20%;
+	margin-top: -20px;
+	height:40px;
+}
+#prof-img img
+{
+	margin-left: 60px;
+	margin-top: 0px;
+	border-radius:100px;
+	border: 2px solid #fff ; 
+}
+#drop-menu-prof
+{
+	background: gray;
+	width: 100%;
+}
+#menu-controls
+{
+	margin-top: 30px;
+}
+#menu-controls > a
+{
+	margin-left: -13px;
+}
+#items
+{
+margin-top:60px;
+}
+
+/********* Dashboard Activity********/
+#activity-items
+{
+	
+	margin-left: 150px;
+	margin-top: 63px;
+	padding: 0em 0px 0.9em;
+}
+#activity-items div
+{
+	margin-left: 10px;
+	padding: 0em 0em 0em;
+}
+#activity-items section
+{
+	background: rgba(0,0,0,0.3);
+	padding:0px 1px 1px;
+}
+#activity-items section:hover
+{
+	background: rgba(255,255,255,0.2);
+	padding:0px 1px 1px;
+	cursor: pointer;
+	text-decoration: none;
+}
+#data-stats-1
+{
+  border-radius: 2px;
+  padding: 2px 1px 1px; 
+  background-color: rgba(0,150,150,1);
+}
+#data-stats-2
+{
+  border-radius: 2px;
+  padding: 2px 1px 1px; 
+  background-color: rgba(245,0,0,1);
+}
+#data-stats-3
+{
+  border-radius: 2px;
+  padding: 2px 1px 1px; 
+  background-color:  rgba(0,200,105,1);
+}
+.stats h1
+{
+	font-size: 36pt;
+	padding: 0px 0.6em;
+	color: #fff;
+}
+.stats p
+{
+	font-family: 'Helvetica' ;
+	color: #fff;
+	padding: 0px 0.9em;
+	font-size: 12pt;
+}
+.stats h5
+{
+    padding: 2px 5em;
+    text-transform: uppercase;
+    border-radius:10px;
+}
+.breadcrumb >li + li:before
+{
+	color:#CCCCCC;
+	content: "/";
+	padding: 0.5px;
+}
+#title-con
+{
+	padding: 0px 5px 0px;
+}
+#users-table
+{
+	background: #fff;
+	border-radius: 2px;
+	padding-bottom: 10px;
+	border-top: 2px solid rgba(245,0,0,1);
+}
+#movie-table
+{
+	background: #fff;
+	border-radius: 2px;
+	padding-bottom: 10px;
+	border-top: 2px solid rgba(245,0,0,1);
+}
+#img-style
+{
+	border: 1px solid #000;
+	box-shadow: 0px 2px 5px #000;
+}
+#edit-form input
+{
+ border:1px solid transparent;
+ background: rgba(0,0,0,0.1);
+ height: 40px;
+}
+#edit-form .row
+{
+	padding: 1em;
+	padding-bottom: 10px;
+}
+#add-user
+{
+	display: none;
+}
+.result
+{
+	position: absolute;
+	margin-left: 650px;
+	top:400px;
+	z-index:1000;
+	display: none;
+}
+#new-movie
+{
+	display: none;
+}
+/*******************Device Adjustment****************/
+@media(min-width:270px) and (max-width:420px)
+{
+#navigation
+{
+    left:0px;
+    background:#1d1d1d;
+    height:100%;
+    color:#fff;
+    position:fixed;
+
+}
+#navigation-links
+{
+	margin-left:10px;
+	margin-top: 20px;
+}
+#profile-item
+{
+	margin-top:70px;
+	margin-left: -10px;
+	left: 0px;
+}
+#profile-item img
+{
+	border: 1px solid #ff6600;
+	border-radius: 100px;
+	left: 0px;
+}
+#profile-item strong
+{
+    font-size: 10pt;
+}
+}
+}
+@media(min-width:420px) and (max-width:640px)
+{
+	.img-link
+	{
+		width:400px;
+	}
+	.info-img
+	{
+		width:260px;
+	}
+	#profile-sidebar
+{
+	width:100%;
+    margin-left:-30px;
+
+}
+
+}
+@media(min-width:640px) and (max-width:880px)
+{
+	.img-link
+	{
+		width:500px;
+	}
+	#profile-sidebar
+{
+	width:100%;
+    margin-left:-40px;
+
+}
+
+}
+@media(min-width:880px) and (max-width:1200px)
+{
+	.img-link
+	{
+		width:600px;
+	}
+
+
+}
+@media(min-width:1200px) and (max-width:1600px)
+{
+	.img-link
+	{
+		width:750px;
+	}
+}

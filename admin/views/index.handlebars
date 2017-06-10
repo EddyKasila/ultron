@@ -1,0 +1,77 @@
+<div id="navbar-dashboard">
+  <div class="navbar-right" id="nav-profile">
+    <div>
+       <ul class="nav">
+        <li class="dropdown" >
+
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            {{#if err}}
+             <img src="images/administrator.png" height="30px" width="30px" >
+             {{else}}
+               <img src="images/{{admin.image}}" height="30px" width="15%" >
+             {{/if}}
+            <strong>{{username}}</strong>
+                   <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" id="drop-menu-prof">
+            <div class="col-md-12" id="menu-controls">
+              <h4><a href="/logout"><i class="fa fa-sign-out fa-lg"></i>&nbsp;Sign Out</a></h4>
+            </div>
+          </ul>
+        </li>
+       </ul>
+    </div>
+  </div>
+  </div>
+
+   <div class="container">
+   	  <div class="row">
+   	  	 <div class="col-xs-1 col-sm-1 col-md-2" id="navigation">
+            <div class="column">
+             <div id="navigation-links">
+          <ul class="nav"><br>
+            <li class="position" style="text-align: center;"><img src="images/careerlogo.png"></li>
+     			 <li class="position"><br><p>Tools</p></li>
+     			 <li class="position"><a href="/index"  title="Dashboard" ><i class="fa fa-dashboard fa-sm active"></i>&nbsp;&nbsp;<i class="link active">Home</i></a></li>
+     		 <li class="position "><a href="/userlist"  title="Users"><i class="fa fa-users fa-sm"></i>&nbsp;&nbsp;<i class="link">Users</i></a></li>
+     		 <li class="position"><a href="/bookings"  title="Bookings" ><i class="fa fa-ticket fa-sm "></i>&nbsp;<i class="link">Booking</i></a></li>
+     		 <li class="position"><a href="/movieslist"  title="Movies" ><i class="fa fa-list fa-s"></i>&nbsp;<i class="link">Movies</i></a></li>
+     			 <li class="position"><br><p>Admin</p></li>
+     			 <li class="position"><a href="/profile"  title="profile" ><i class="fa fa-user fa-sm"></i>&nbsp;&nbsp;<i class="link">Profile</i></a></li>
+     			 <li class="position"><a href="/logout"  title="profile" ><i class="fa fa-sign-out fa-sm"></i>&nbsp;&nbsp;<i class="link">Logout</i></a></li>
+          </ul>
+     	       </div>
+            </div>
+        </div>
+   	  <div class="col-xs-11 col-sm-11 col-md-11 col-md-offset-1"  id="activity-items">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div id="title-con">
+         <ol class="breadcrumb navbar-right">
+          <li class="active"><a href="/index">Home</a></li>
+        </ol>
+        <h1>Dashboard</h1>
+      </div>
+      </div>
+   	   	  <div class="row">
+           <div class="col-xs-12 col-sm-6 col-md-4" id="data-stats-1">
+             <h2>Users</h2>
+             <div style="width: 100%; padding: 1em 1em 1em 1em;  bottom:0; background: rgba(255,255,255,0.5);">
+              	<h5><a href="/userlist">More Info</a></h5>
+             </div>
+     	  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4" id="data-stats-2">
+     	  	<h2>Uploaded Movies</h2>
+  <div style="width: 100%; padding: 1em 1em 1em 1em;  bottom:0; background: rgba(255,255,255,0.5);">
+  <h5><a href="/movieslist">More Info</a></h5>
+  </div>
+     	  </div>
+        <div class="col-xs-12 col-sm-6 col-md-4" id="data-stats-3">
+<h2>Booked Movies</h2>
+<div style="width: 100%; padding: 1em 1em 1em 1em;  bottom:0; background: rgba(255,255,255,0.5);">
+  <h5><a href="/bookings">More Info</a></h5>
+</div>
+</div>
+        </div>
+   	  </div>
+    </div>
+   </div>

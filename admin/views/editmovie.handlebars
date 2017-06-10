@@ -1,0 +1,77 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-1 col-sm-1 col-md-2" id="navigation">
+			 <div class="column">
+				<div id="navigation-links">
+		 <ul class="nav"><br>
+			 <li class="position" style="text-align: center;"><img src="images/careerlogo.png"></li>
+			 <li class="position"><br><p>Tools</p></li>
+			 <li class="position"><a href="/index"  title="Dashboard" ><i class="fa fa-dashboard fa-sm"></i>&nbsp;&nbsp;<i class="link">Home</i></a></li>
+		 <li class="position "><a href="/userlist"  title="Users"><i class="fa fa-users fa-sm"></i>&nbsp;&nbsp;<i class="link">Users</i></a></li>
+		 <li class="position"><a href="/bookings"  title="Bookings" ><i class="fa fa-ticket fa-sm "></i>&nbsp;<i class="link">Booking</i></a></li>
+		 <li class="position"><a href="/movieslist"  title="Movies" ><i class="fa fa-list fa-sm active"></i>&nbsp;<i class="link active">Movies</i></a></li>
+			 <li class="position"><br><p>Admin</p></li>
+			 <li class="position"><a href="/profile"  title="profile" ><i class="fa fa-user fa-sm"></i>&nbsp;&nbsp;<i class="link">Profile</i></a></li>
+			 <li class="position"><a href="/logout"  title="profile" ><i class="fa fa-sign-out fa-sm"></i>&nbsp;&nbsp;<i class="link">Logout</i></a></li>
+
+		 </ul>
+				</div>
+			 </div>
+		</div>
+
+		<div class="col-xs-11 col-sm-11 col-md-11 col-md-offset-1"  id="activity-items">
+	 <div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<div id="title-con">
+			 <ol class="breadcrumb navbar-right">
+				<li class="active"><a href="/index">Home</a></li>
+				<li class="active"><a href="/movieslist">Movie List</a></li>
+				<li class="active"><a href="/editmovie">Edit Movie</a></li>
+			</ol>
+			<h2><i class="fa fa-list"></i>&nbsp;Dashboard: Edit Movie</h2>
+		</div>
+		</div>
+		<div  class="col-xs-12 col-sm-12 col-md-12" id="contents">
+		 <h3>Edit movie details</h3><hr>
+				<div class="row">
+		   	    <div class="col-md-6">
+		   	    	<form id="form" name="form" action="" method="POST">
+
+		   	    		<div class="col-md-12">
+		   	    		 <label>Movie Title:</label>
+		   	    			<input type="text" name="title" class="form-group form-control" required>
+		   	    		</div>
+		   	    		<div class="col-md-12">
+		   	    		 <label>Main Characters:</label>
+		   	    			<input type="text" name="characters" class="form-group form-control" required>
+		   	    		</div>
+		   	    		<div class="col-md-12">
+		   	    		 <label>Description:</label>
+		   	    			<input type="text" name="description" class="form-group form-control" required>
+		   	    		</div>
+		   	    		<div class="col-md-6">
+		   	                <button class="btn btn-primary" type="submit">Register</button>
+		   	    		</div>
+		   	    	</form>
+
+		   	    </div>
+		   	</div>
+
+		 </div>
+
+
+	 </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function delete_id(id)
+{
+ if(confirm("Are you sure?"))
+ {
+	 window.location.href = 'functions/deletem.php?delete_id='+id;
+ }
+}
+</script>

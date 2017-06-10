@@ -1,0 +1,70 @@
+   <div class="container">
+     <div class="row">
+       <div class="col-xs-1 col-sm-1 col-md-2" id="navigation">
+          <div class="column">
+           <div id="navigation-links">
+        <ul class="nav"><br>
+          <li class="position" style="text-align: center;"><img src="images/careerlogo.png"></li>
+          <li class="position"><br><p>Tools</p></li>
+          <li class="position"><a href="/index"  title="Dashboard" ><i class="fa fa-dashboard fa-sm"></i>&nbsp;&nbsp;<i class="link">Home</i></a></li>
+        <li class="position "><a href="/userlist"  title="Users"><i class="fa fa-users fa-sm"></i>&nbsp;&nbsp;<i class="link">Users</i></a></li>
+        <li class="position"><a href="/bookings"  title="Bookings" ><i class="fa fa-ticket fa-sm "></i>&nbsp;<i class="link">Booking</i></a></li>
+        <li class="position"><a href="/movieslist"  title="Movies" ><i class="fa fa-list fa-sm active"></i>&nbsp;<i class="link active">Movies</i></a></li>
+          <li class="position"><br><p>Admin</p></li>
+          <li class="position"><a href="/profile"  title="profile" ><i class="fa fa-user fa-sm"></i>&nbsp;&nbsp;<i class="link">Profile</i></a></li>
+          <li class="position"><a href="/logout"  title="profile" ><i class="fa fa-sign-out fa-sm"></i>&nbsp;&nbsp;<i class="link">Logout</i></a></li>
+
+        </ul>
+           </div>
+          </div>
+       </div>
+
+       <div class="col-xs-11 col-sm-11 col-md-11 col-md-offset-1"  id="activity-items">
+      <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12">
+         <div id="title-con">
+          <ol class="breadcrumb navbar-right">
+           <li class="active"><a href="/index">Home</a></li>
+           <li class="active"><a href="/movielists">Movie List</a></li>
+         </ol>
+         <h2><i class="fa fa-list"></i>&nbsp;Dashboard: Movie List</h2>
+       </div>
+       </div>
+       <div  class="col-xs-12 col-sm-12 col-md-12" id="contents">
+        <h3>List of Movies</h3><hr>
+         <div class="row">
+     	      <div class="col-md-12" id="movie-table">
+              <table class="table">
+              {{#if err}}
+                  <th class="col-md-offset-4"><i class="fa fa-exclamation-triangle fa-2x"></i>No data found!</th>
+              {{else}}
+                <thead style="background:#2d2d2d; color:#fff;"><th><strong>Id</strong></th><th><strong>Movie Title</strong></th><th><strong>Main Characters</strong></th><th><strong>Descrition</strong></th><th><strong>Movie Poster</strong></th><th>Cost</th><th></th><th></th></thead>
+                  {{#each movies as |movie|}}
+                      <tbody>
+                        <tr><td>{{movie.id}}</td><td>{{movie.movie_title}}</td><td>{{movie.main_characters}}</td>
+                        <td>{{movie.description}}</td><td>{{movie.movie_poster}}</td><td>{{movie.cost}}</td><td><a href="/editmovie/{{movie.id}}">Edit</a></td><td><a href="">Delete</a></td></tr>
+                      </tbody>
+                  {{/each}}
+              {{/if}}
+              </table>
+
+           </div>
+
+        </div>
+
+
+   	  </div>
+   </div>
+ </div>
+</div>
+</div>
+	</body>
+  <script type="text/javascript">
+   function delete_id(id)
+   {
+    if(confirm("Are you sure?"))
+    {
+      window.location.href = 'functions/deletem.php?delete_id='+id;
+    }
+   }
+ </script>

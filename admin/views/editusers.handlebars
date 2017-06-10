@@ -1,0 +1,118 @@
+ <script>
+            $(function(){
+            $('#date').datepicker();
+            });
+</script>
+	  <div id="navbar-dashboard">
+  	<div class="navbar-right" id="nav-profile">
+
+  	  <div>
+  	  	 <ul class="nav">
+  	  	 	<li class="dropdown" >
+
+  	  	 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  	  	 			 <img src="images/administrator.png" height="30px" width="30px" >
+                     <strong>{{username}}</strong>
+                     <b class="caret"></b>
+  	  	 		</a>
+  	  	 		<ul class="dropdown-menu" id="drop-menu-prof">
+  	  	 			<div class="col-md-12" id="prof-img">
+  	  	 			 <img src="images/administrator.png" height="80px" width="80px" >
+                     <strong>{{username}}</strong>
+  	  	 			</div>
+  	  	 			<div class="col-md-12" id="menu-controls">
+  	  	 				<a href="#" class="btn btn-default navbar-left">Profile</a>
+  	  	 				<a href="/logout" class="btn btn-default navbar-right">Sign Out</a>
+  	  	 			</div>
+  	  	 		</ul>
+  	  	 	</li>
+  	  	 </ul>
+  	  </div>
+  	</div>
+  	</div>
+  </div>
+<div id="body">
+   <div class="container">
+     <div class="row">
+       <div class="col-xs-1 col-sm-1 col-md-2" id="navigation">
+          <div class="column">
+           <div id="navigation-links">
+        <ul class="nav"><br>
+          <li class="position" style="text-align: center;"><img src="images/careerlogo.png"></li>
+          <li class="position"><br><p>Tools</p></li>
+          <li class="position"><a href="/index"  title="Dashboard" ><i class="fa fa-dashboard fa-sm"></i>&nbsp;&nbsp;<i class="link">Home</i></a></li>
+        <li class="position "><a href="/userlist"  title="Users"><i class="fa fa-users fa-sm"></i>&nbsp;&nbsp;<i class="link">Users</i></a></li>
+        <li class="position"><a href="/bookings"  title="Bookings" ><i class="fa fa-ticket fa-sm "></i>&nbsp;<i class="link">Booking</i></a></li>
+        <li class="position"><a href="/movieslist"  title="Movies" ><i class="fa fa-list fa-sm"></i>&nbsp;<i class="link">Movies</i></a></li>
+          <li class="position"><br><p>Admin</p></li>
+          <li class="position"><a href="/profile"  title="profile" ><i class="fa fa-user fa-sm active"></i>&nbsp;&nbsp;<i class="link active">Profile</i></a></li>
+          <li class="position"><a href="/logout"  title="profile" ><i class="fa fa-sign-out fa-sm"></i>&nbsp;&nbsp;<i class="link">Logout</i></a></li>
+
+        </ul>
+           </div>
+          </div>
+       </div>
+       <div class="col-xs-11 col-sm-11 col-md-11 col-md-offset-1"  id="activity-items">
+      <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12">
+         <div id="title-con">
+          <ol class="breadcrumb navbar-right">
+           <li class="active"><a href="/index">Home</a></li>
+         </ol>
+         <h2><i class="fa fa-user"></i>&nbsp;Dashboard: Administrator Profile</h2>
+       </div>
+       </div>
+       <div class=" col-xs-12 col-sm-12 col-md-12" id="contents">
+       <h1>Edit User</h1>
+       <hr>
+     		  <div class="row">
+
+           <div class=" col-xs-12 col-md-6 col-md-6">
+
+                  <form action="#" method="POST" name="form" >
+                      <table class="table" id="edit-form">
+                            <caption>Basic Info</caption>
+
+
+                          <tbody>
+                                <tr><td><strong>Id:</strong></td><td><input type="text" id="id" name="id" value="{{user.id}}" disabled></td></tr>
+                               <tr><td><strong>Name:</strong></td><td><input type="text" id="name" name="name" value="{{name}}"></td></tr>
+                              <tr><td><strong>Location:</strong></td><td><input type="text" id="location" name="location" value="{{location}}" id="date" ></td></tr>
+                              <tr><td><strong>Username:</strong></td><td><input type="text" id="username" name="username" required value="{{username}}"></td></tr>
+                            </tbody>
+
+                        </table>
+                        <table class="table" id="edit-form">
+                            <caption>Contact Info</caption>
+                                <tbody>
+                                <tr><td><strong>Email:</strong>></td><td><input type="text" id="email" name="email" required value="{{email}}"></td></tr>
+                              <tr><td><strong>Phone Number:</strong></td><td><input type="text" id="phone" name="phone" value="{{phone_no}}"></td></tr>
+
+                            </tbody>
+
+                        </table>
+                  </form>
+                  <div class="col-md-3">
+                      <button id="editbtn" class="btn btn-orange">Save Changes</button>
+                  </div>
+                  <div class="col-md-3">
+                      <a href="/userlist" class="btn btn-orange">Back</a>
+                  </div>
+
+                 </div>
+                 <br><br>
+          </div>
+     	   </div>
+       </div>
+        </div>
+   	  </div>
+   </div>
+</div>
+</div>
+
+<script type="text/javascript">
+   $("#close").click(function (){
+            $(".result").fadeOut();
+            location.reload();
+        });
+</script>

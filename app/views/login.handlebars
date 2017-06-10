@@ -1,0 +1,51 @@
+<div id="hero-image">
+	<h1 id="hero-title">LOG IN
+	</h1>
+</div>
+
+<div id="main">
+	<div class="container">
+
+	   	<div class="row">
+	   	    <div class="col-md-6">
+
+	   	    	<form id="form" name="form" action="" method="POST">
+	   	    		
+	   	    		<div class="col-md-12">
+	   	    		 <label>Username:</label>
+	   	    			<input type="text" name="username" class="form-group form-control" required>
+	   	    		</div>
+	   	    		<div class="col-md-12">
+	   	    		 <label>Password:</label>
+	   	    			<input type="password" name="password" class="form-group form-control" required>
+	   	    		</div>
+	   	    		<div class="col-md-12">
+	   	    			{{!-- {{login}} --}}
+	   	                <button class="btn btn-primary" type="submit">Log In</button>
+	   	    		</div>
+
+	   	    		{{#if err}}
+	   	    		<div id="message">
+	   	    			<div style="padding: 5px;">
+	   	    				<div id="inner-message" class="alert">
+	   	    					<div class="alert alert-warning"><strong>Wrong username or password entered</strong></div>
+	   	    				</div>
+	   	    			</div>
+	   	    		</div>
+	   	    		{{/if}}
+	   	    		
+	   	    	</form>
+
+	   	    </div>
+	   	</div>
+
+	</div>
+</div>
+
+{{!-- Handlebars.registerHelper("login", function(username, password, options){
+	if (options.hash.username && options.hash.password === options.hash.{{users.username}} && options.hash.{{users.password}}){
+		<button class="btn btn-primary" type="submit"><a href="/home">Log In</a></button>
+	} else {options.hash.message(Either username or password is incorrect);
+		<button class="btn btn-warning" type="submit">OK</button>
+	}
+}) --}}

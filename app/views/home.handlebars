@@ -1,0 +1,27 @@
+	<div id="hero-image">
+		<h1 id="hero-title">ULTRON MOVIE COLLECTION</h1>
+	</div>
+
+	<div id="poster" class="content-padding clearfix">
+
+		{{#each movies as |movie|}}
+		<div class="poster">
+
+			<a href="movie/{{movie.id}}">
+
+				<a href="movie/{{movie.id}}"><img src="/images/{{movie.movie_poster}}" class="img-responsive"></a>
+
+				<div class="poster-info-overlay">
+					{{!-- <h3></h3> --}}
+					<h3>{{movie.movie_title}}</h3>
+					<a href="/movie/{{movie.id}}"><h4>View More <i class="fa fa-arrow-right"></i></h4></a>
+				</div>
+
+			</a>
+
+		</div>
+		{{/each}}
+
+	</div>
+
+	
